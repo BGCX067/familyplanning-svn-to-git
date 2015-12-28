@@ -1,0 +1,352 @@
+.box .forms {
+	padding : 10px 20px 20px;
+}
+
+.forms form {
+	margin : 10px 0 0;
+	padding : 0;
+}
+
+.row{
+	display : inline-block;	
+	padding : 10px 0;
+	width : 100%;
+}
+
+.row label{
+	display : block;
+	padding : 0 0 8px;
+	line-height : 9px;
+	color : #1c1c1c;
+	font-weight : bold;
+}
+
+.row span {
+	float : left;
+	display : block;
+	margin : 0 20px 0 4px;
+	line-height : 20px;
+}
+
+.row span.date {
+	margin : 4px 4px 0 0;
+}
+
+/* //////////////////// INPUT \\\\\\\\\\\\\\\\\\\\ */
+
+.row input {
+	/*float : left;*/
+	background-image : url(../gfx/input-back.gif);
+	background-repeat : repeat-x;
+	background-color : transparent;
+	border : 1px solid #cdcdcd;
+	-webkit-border-radius : 4px;
+	-moz-border-radius : 4px;
+	border-radius : 4px;
+	outline: none;
+	padding : 3px 5px 3px;
+	margin : 0;
+	color : #1c1c1c;
+	line-height : 1.4em;
+	width : 886px;
+	height : 18px;
+}
+
+.row input.small,
+.row textarea.small {
+	width : 120px;
+}
+
+/* Zamshed Farhan: Make the textbox/textarea smallest in size. */
+.row input.smallest,
+.row textarea.smallest {
+	width : 25px;
+}
+
+.row input.verysmall,
+.row textarea.verysmall {
+	width : 35px;
+}
+
+.row input.medium,
+.row textarea.medium {
+	width : 250px;
+}
+
+.row input.big,
+.row textarea.big {
+	width : 450px;
+<<<<<<< .mine
+}
+
+
+.row select {
+	float : left;
+	background-image : url(../gfx/input-back.gif);
+	background-repeat : repeat-x;
+	background-color : transparent;
+	border : 1px solid #cdcdcd;
+	-webkit-border-radius : 4px;
+	-moz-border-radius : 4px;
+	border-radius : 4px;
+	outline: none;
+	padding : 3px 5px 3px;
+	margin : 0;
+	color : #1c1c1c;
+	line-height : 1.4em;
+}
+
+.row select.verysmall{
+	width : 50px;
+	height: 25px;
+}
+
+/* Zamshed Farhan: Rotate text. */
+.rotate {
+
+ 
+	
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	white-space:nowrap;
+	width:10px;
+}
+
+.rotate1 {
+
+
+
+	 /*Safari */
+	-webkit-transform: rotate(270deg);
+
+	 /*Firefox */
+	-moz-transform: rotate(270deg);
+
+	 /*IE */
+	-ms-transform: rotate(270deg);
+
+	 /*Opera */
+	-o-transform: rotate(270deg);
+
+	 /*Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	white-space:nowrap;
+	width:10px;
+	
+	position: absolute;
+  	top: 100%;
+	margin-top:690px;
+}
+
+.rotate-text {
+
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	white-space:nowrap;
+	width:10px;
+
+}
+
+
+.rotate-text-form2 {
+
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	white-space:nowrap;
+	width:10px;
+	
+	position: absolute;
+  	bottom: 100%;
+	margin-bottom: -480px;
+}
+
+.box_room {
+	border:solid #000000 1px;
+	background-color:#CCCCCC;
+	padding: 5px 10px 5px 10px;
+	color:#000000;
+	margin-left: 10px;
+}
+
+.masterinfo{
+    float : left;
+	border : 1px solid #cdcdcd;
+	-webkit-border-radius : 4px;
+	-moz-border-radius : 4px;
+	border-radius : 4px;
+	outline: none;
+	padding : 3px 5px 3px;
+	margin : 5px 20px 5px 20px;
+	color : #1c1c1c;
+	line-height : 1.4em;
+	width : 826px;
+
+}
+
+.masterinfo table tr td{
+    font-size:12px;
+}
+
+.masterinfo .row select {
+	background-color : transparent;
+    -webkit-border-radius : 4px;
+	-moz-border-radius : 4px;
+	border-radius : 4px;
+    cursor : pointer;
+	color : #1c1c1c;
+	text-decoration : none;
+    border : 1px solid #cdcdcd;    
+    height:26px;
+    padding-top:0;
+    padding-bottom:5px;
+    width:120px;
+}
+
+.buttons div{
+	float : left;
+	padding : 5px 0 0 10px;
+}
+
+.row button::-moz-focus-inner {border:0;padding:0;margin:0;}
+
+.row button{
+	float : left;
+	background-repeat : repeat-x;
+	background-color : transparent;
+	-webkit-border-radius : 4px;
+	-moz-border-radius : 4px;
+	border-radius : 4px;
+	border : none;
+	outline: none;
+	padding : 0;
+	margin : 0 4px 0 0;
+	cursor : pointer;
+	text-transform : uppercase;
+    overflow: visible;
+	width : auto;    
+}
+
+.row button span{
+	float : left;
+	background-repeat : repeat-x;
+	background-color : transparent;
+	-webkit-border-radius : 4px;
+	-moz-border-radius : 4px;
+	border-radius : 4px;
+	padding : 0 15px;
+	margin : 0;
+	font-family : Arial;
+	font-size : 14px;
+	font-weight : bold;
+	line-height : 1.87em;
+	color : #FFFFFF;
+	white-space : nowrap;
+}
+
+
+.row button:hover span {
+	background-position : left bottom;
+	border : 1px solid #2b2b2b;
+}
+
+#indicator tr td{
+    font-size:12px;
+}
+
+.reportHeader{
+    margin:5px 5px 5px;
+    width:100%;
+    text-align:left;
+    float:left;
+    padding-left:15px;
+}
+
+.reportHeader table tr td{
+    font-size:12px;
+    color:green;
+    padding:3px 10px;
+    line-height:30px;
+}
+
+.reportHeader table tr td.headerFont{
+    font-size:12px;
+    font-weight:bold;
+}
+
+.reportBody{
+    margin:5px 5px 5px;
+    width:100%;
+    text-align:left;
+    float:left;
+}
+
+.box .pages, .box .pages table{
+	*zoom : 1;
+}
+
+.box .pages table {
+	border-top : 1px solid #dbdbdb;
+	margin : 0;
+	padding : 0;
+	border-collapse: collapse;
+	line-height : 30px;
+	width : 100%;
+    border-left : 1px solid #dbdbdb;
+}
+
+.box .pages table thead{
+	font-weight : bold;
+	color : #1c1c1c
+}
+
+.box .pages tr {
+	border-bottom : 1px solid #dbdbdb;
+	border-right : 1px solid #dbdbdb;
+    padding : 8px 5px;
+}
+
+.box .pages table tr td {
+	border-left: 1px solid #dbdbdb;
+    padding:10px 10px;
+    font-size:12px;
+}

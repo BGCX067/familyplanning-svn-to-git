@@ -1,0 +1,19 @@
+<!-- MySQL database context -->
+<Context path="/fpb"
+docBase="fpb"
+debug="5"
+reloadable="true"
+crossContext="true">
+<Resource name="jdbc/mysql"
+auth="Container"
+type="javax.sql.DataSource"
+username="root"
+password="root"
+driverClassName="com.mysql.jdbc.Driver"
+url="jdbc:mysql://localhost:3306/fpb"
+maxActive="8"
+maxIdleTime="1800"
+maxIdle="4"/>
+
+
+</Context>

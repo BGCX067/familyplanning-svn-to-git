@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+  <form-beans>
+
+    <form-bean name="fpbLoginForm" type="org.apache.struts.validator.DynaValidatorActionForm">
+      <form-property name="fpbUserInfo"  type="org.icddrb.fpb.db.UserInfo"/>
+    </form-bean>
+
+      <form-bean name="misFormForm" type="org.apache.struts.validator.DynaValidatorActionForm">
+        <form-property name="misForm"  type="org.icddrb.fpb.db.MISForm"/>
+      </form-bean>
+
+  </form-beans>
+
+<!--  <global-forwards>-->
+<!--    <forward name="Login"-->
+<!--      path="/jsp/login/Login.jsp">-->
+<!--    </forward>-->
+<!--  </global-forwards>-->
+
+
+  <action-mappings>
+    <action path="/sort"
+      scope="request"
+      type="fr.improve.struts.taglib.layout.sort.SortAction"
+      validate="false">
+    </action>
+
+    <action path="/page"
+      scope="request"
+      type="fr.improve.struts.taglib.layout.sort.PageAction"
+      validate="false">
+    </action>
+
+
+    <action path="/FamilyPlanningLogin"
+      name="fpbLoginForm"
+      scope="request"
+      validate="false"
+      parameter="reqCode"
+      type="org.icddrb.fpb.action.FamilyPlanningLoginDispatchAction">
+      <forward name="fpb.login" path="/index.jsp"/>
+      <forward name="fpb.dashBoard" path="/dashboard.jsp"/>
+    </action>
+
+      <action path="/MISForm"
+        name="misFormForm"
+        scope="request"
+        validate="false"
+        parameter="reqCode"
+        type="org.icddrb.fpb.action.MISFormDispatchAction">
+        <forward name="fpb.misFormOne" path="/MISFormOne.jsp"/>
+        <forward name="fpb.misFormTwo" path="/MIS_Form02.jsp"/>
+        <forward name="fpb.misFormThree" path="/MIS_Form03.jsp"/>
+
+      </action>
+
+      <action path="/MYCNSIAReport"
+          name="misFormForm"
+          scope="request"
+          validate="false"
+          parameter="reqCode"
+          type="org.icddrb.fpb.action.MYCNSIAReportDispatchAction">
+          <forward name="fpb.mycnsiaReport" path="/MYCNSIAReport.jsp"/>
+          <forward name="fpb.mycnsiaPieReport" path="/MYCNSIAGraphicalReport.jsp"/>
+
+
+        </action>
+
+  </action-mappings>
+
+  <controller
+    locale="true">
+  </controller>
+
+  <message-resources parameter="ApplicationResources">
+  </message-resources>
+                   
+</struts-config>
